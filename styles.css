@@ -40,3 +40,11 @@ img {
 .blue-bar {
   background-color: var(--blue-300);
 }
+
+/* ### GENERAL STYLING */
+
+body {
+  background-color: var(--red-100);
+  font-family: var(--ff-dm-sans);
+  font-weight: var(--fw-400);
+}
