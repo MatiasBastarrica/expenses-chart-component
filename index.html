@@ -22,8 +22,57 @@
     <title>Frontend Mentor | Expenses chart component</title>
   </head>
   <body>
-    My balance $921.48 Spending - Last 7 days mon tue wed thu fri sat sun Total
-    this month $478.33 +2.4% from last month
+    <main>
+      <article class="expenses-chart-component">
+        <div class="expenses-chart__header">
+          <div class="header__text">
+            <h1>My balance</h1>
+            <span class="balance">$921.48</span>
+          </div>
+          <div class="logo-container">
+            <img src="./images/logo.svg" alt="" />
+          </div>
+        </div>
+        <div class="expenses-chart__main">
+          <h2>Spending - Last 7 days</h2>
+          <div class="chart-container">
+            <ol>
+              <li class="bar" id="monday">
+                <span class="sr-only">Monday: </span>
+              </li>
+              <li class="bar" id="tuesday">
+                <span class="sr-only">Tuesday: </span>
+              </li>
+              <li class="bar" id="wednesday">
+                <span class="sr-only">Wednesday: </span>
+              </li>
+              <li class="bar" id="thursday">
+                <span class="sr-only">Thursday: </span>
+              </li>
+              <li class="bar" id="friday">
+                <span class="sr-only">Friday: </span>
+              </li>
+              <li class="bar" id="saturday">
+                <span class="sr-only">Saturday: </span>
+              </li>
+              <li class="bar" id="sunday">
+                <span class="sr-only">Sunday: </span>
+              </li>
+            </ol>
+          </div>
+          <div class="chart-footer">
+            <div>
+              <p>Total this month</p>
+              <span class="month-total">$478.33</span>
+            </div>
+            <div>
+              <span class="delta-month">+2.4%</span>
+              <p>from last month</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
