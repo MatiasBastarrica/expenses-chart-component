@@ -30,3 +30,13 @@ img {
   display: block;
   max-width: 100%;
 }
+
+/* ### UTILITY CLASSES ### */
+
+.orange-bar {
+  background-color: var(--red-500);
+}
+
+.blue-bar {
+  background-color: var(--blue-300);
+}
