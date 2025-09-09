@@ -8,4 +8,8 @@
   --brown-950: hsl(25, 47%, 15%);
   --brown-400: hsl(28, 10%, 53%);
   --red-100: hsl(26, 66%, 93%);
+  /* # TYPOGRAPHY # */
+  --ff-dm-sans: "DM Sans", sans-serif;
+  --fw-400: 400;
+  --fw-700: 700;
 }
