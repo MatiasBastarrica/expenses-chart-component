@@ -41,10 +41,144 @@ img {
   background-color: var(--blue-300);
 }
 
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 /* ### GENERAL STYLING */
 
 body {
   background-color: var(--red-100);
   font-family: var(--ff-dm-sans);
   font-weight: var(--fw-400);
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+/* ### EXPENSES CHART COMPONENT ### */
+
+main {
+  padding: 5rem 1rem;
+}
+
+.expenses-chart-component {
+  display: grid;
+  gap: 1rem;
+}
+
+/* # HEADER # */
+
+.expenses-chart__header {
+  background-color: var(--red-500);
+  padding: 1.5rem 1.3rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.6rem;
+}
+
+.expenses-chart__header .header__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.expenses-chart__header h1 {
+  font-size: 1.075rem;
+  font-weight: var(--fw-400);
+}
+
+.expenses-chart__header .balance {
+  font-weight: var(--fw-700);
+  font-size: 1.75rem;
+}
+
+/* # MAIN # */
+
+.expenses-chart__main {
+  background-color: #fff;
+  padding: 1.5rem 1.3rem;
+  color: var(--brown-400);
+  border-radius: 0.6rem;
+  display: grid;
+  gap: 1.2rem;
+}
+
+.expenses-chart__main ol {
+  list-style: none;
+}
+
+.expenses-chart__main h2 {
+  color: var(--brown-950);
+  font-weight: var(--fw-700);
+  font-size: 1.5rem;
+}
+
+.chart-container {
+  outline: 2px solid deeppink;
+  min-height: 191px;
+}
+
+.chart-container ol {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 160px;
+}
+
+.chart-container .bar {
+  width: 33px;
+  height: 100px;
+  background-color: var(--red-500);
+  border-radius: 0.3rem;
+  position: relative;
+}
+
+.bar::after {
+  position: absolute;
+  bottom: -27px;
+  display: block;
+  color: var(--brown-400);
+  content: "days";
+}
+
+.chart-footer {
+  padding-top: 1.2rem;
+  border-top: 2px solid #f2e8df;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.total-month-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.month-total {
+  font-size: 2rem;
+  font-weight: var(--fw-700);
+  color: var(--brown-950);
+}
+
+.month-percentage-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.delta-month {
+  font-weight: var(--fw-700);
+  color: var(--brown-950);
+  align-self: flex-end;
+  font-size: 1.125rem;
 }
