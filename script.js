@@ -8,6 +8,7 @@ promiseData
   })
   .then((data) => {
     populateChart(data);
+    handleBarColor();
   });
 
 function populateChart(dataArr) {
@@ -16,4 +17,38 @@ function populateChart(dataArr) {
     daysName[i].textContent = dayInfoObj.day;
     bars[i].style.height = `${dayInfoObj.amount * (160 / 60)}px`;
   }
+}
+
+function handleBarColor() {
+  const currentDate = new Date();
+  const currentDayOfTheWeek = currentDate.getDay();
+  switch (currentDayOfTheWeek) {
+    case 0:
+      changeBarColor(bars[6]);
+      break;
+    case 1:
+      changeBarColor(bars[0]);
+      break;
+    case 2:
+      changeBarColor(bars[1]);
+      break;
+    case 3:
+      changeBarColor(bars[2]);
+      break;
+    case 4:
+      changeBarColor(bars[3]);
+      break;
+    case 5:
+      changeBarColor(bars[4]);
+      break;
+    case 6:
+      changeBarColor(bars[5]);
+      break;
+    default:
+      break;
+  }
+}
+
+function changeBarColor(bar) {
+  bar.style.backgroundColor = "var(--blue-300)";
 }
