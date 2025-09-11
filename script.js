@@ -1,5 +1,6 @@
 const daysName = document.querySelectorAll(".day-name");
 const bars = document.querySelectorAll(".bar");
+const spendingTags = document.querySelectorAll(".spending-value-tag");
 const promiseData = fetch("./data.json");
 
 promiseData
@@ -16,6 +17,7 @@ function populateChart(dataArr) {
     const dayInfoObj = dataArr[i];
     daysName[i].textContent = dayInfoObj.day;
     bars[i].style.height = `${dayInfoObj.amount * (160 / 60)}px`;
+    spendingTags[i].textContent = `$${dayInfoObj.amount}`;
   }
 }
 

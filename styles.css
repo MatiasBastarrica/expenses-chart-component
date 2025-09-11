@@ -126,6 +126,7 @@ main {
 
 .chart-container {
   min-height: 191px;
+  margin-top: 0.8rem;
 }
 
 .chart-container ol {
@@ -154,6 +155,26 @@ main {
   text-align: center;
   width: 100%;
   font-size: 0.875rem;
+}
+
+.spending-value-tag {
+  display: none;
+  position: absolute;
+  top: -33px;
+  background-color: var(--brown-950);
+  color: #fff;
+  border-radius: 0.2rem;
+  width: fit-content;
+  text-align: center;
+  transform: translateX(-50%);
+  left: 50%;
+  padding: 3px 5px;
+  font-weight: var(--fw-700);
+  font-size: 0.865rem;
+}
+
+.bar:hover ~ .spending-value-tag {
+  display: block;
 }
 
 .chart-footer {
