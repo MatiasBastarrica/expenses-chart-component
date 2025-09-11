@@ -7,14 +7,15 @@ promiseData
     return response.json();
   })
   .then((data) => {
-    populateDayName(data);
+    populateChart(data);
     // console.log(data);
     // return data;
   });
 
-function populateDayName(dataArr) {
+function populateChart(dataArr) {
   for (let i = 0; i < dataArr.length; i++) {
     const dayInfoObj = dataArr[i];
     daysName[i].textContent = dayInfoObj.day;
+    bars[i].style.height = `${dayInfoObj.amount * (160 / 60)}px`;
   }
 }
