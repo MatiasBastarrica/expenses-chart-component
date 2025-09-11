@@ -8,8 +8,6 @@ promiseData
   })
   .then((data) => {
     populateChart(data);
-    // console.log(data);
-    // return data;
   });
 
 function populateChart(dataArr) {
