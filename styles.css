@@ -72,7 +72,7 @@ main {
 .expenses-chart-component {
   display: grid;
   gap: 1rem;
-  max-width: 400px;
+  max-width: 465px;
 }
 
 /* # HEADER # */
@@ -207,4 +207,23 @@ main {
   color: var(--brown-950);
   align-self: flex-end;
   font-size: 1.125rem;
+}
+
+/* ### MEDIA QUERIES ### */
+
+@media (min-width: 28em) {
+  main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .expenses-chart-component {
+    margin-inline: auto;
+    flex-grow: 1;
+  }
+
+  .chart-container .bar {
+    width: 45px;
+  }
 }
