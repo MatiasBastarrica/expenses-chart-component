@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [My Solution](https://your-solution-url.com)
+- Solution URL: [My Solution](https://www.frontendmentor.io/solutions/expenses-chart-component-mb-ymMP9bIHeS)
 - Live Site URL: [Live](https://matiasbastarrica.github.io/expenses-chart-component/)
 
 ## My process
