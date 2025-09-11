@@ -72,6 +72,7 @@ main {
 .expenses-chart-component {
   display: grid;
   gap: 1rem;
+  max-width: 400px;
 }
 
 /* # HEADER # */
@@ -140,15 +141,18 @@ main {
   height: 100px;
   background-color: var(--red-500);
   border-radius: 0.3rem;
+}
+
+.chart-container .day {
   position: relative;
 }
 
-.bar::after {
+.day-name {
   position: absolute;
   bottom: -27px;
-  display: block;
   color: var(--brown-400);
   content: "days";
+  text-align: center;
 }
 
 .chart-footer {
