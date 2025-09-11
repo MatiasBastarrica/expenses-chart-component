@@ -153,6 +153,8 @@ main {
   color: var(--brown-400);
   content: "days";
   text-align: center;
+  width: 100%;
+  font-size: 0.875rem;
 }
 
 .chart-footer {
